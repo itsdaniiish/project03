@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute To Steve Jobs</title>
+    <style>
+        #parent{
+                width: 90%;
+                height: 320px;
+                border: 0px solid rgb(12, 7, 7);
+                margin: auto;
+                
+    }
+        h1 {
+            border: 1px;
+            height: 5px;
+            font-size: 65px;
+            font-family: "Platypi", serif;
+            font-weight: 600;
+            margin-top: -2px;
+            color: solid black;
+            text-align: center;
+        }
+        p {
+            font-size: 170%;
+            opacity: 0.7;
+            text-align: center;
+        }
+        #column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            background-color:#272B30EE;
+            border-radius: 2px;
+            
+           
+        }
+        h2 {
+    font-size: 1.875em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 9.26vh;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "SF Pro Display", sans serif;
+    max-width: 1920px;
+    font-size: 16px;
+  }
+  
+  #main {
+    width: 100%;
+    margin: auto;
+  }
+  
+  #title {
+    text-align: center;
+    font-size: 4em;
+    padding: 20px;
+    margin-bottom: 7.80vh;
+  }
+  
+  #img-div {
+    margin-bottom: 5.55vh;
+  }
+  
+  #image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2.03vh;
+  }
+  
+  #img-caption {
+    font-size: 1.250em;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #tribute-info {
+    background-color: #f2f2f2;
+    padding: 40px;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1024px; 
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #707070;
+    top: 20px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    height: 92%;
+  }
+  
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #e1ab07;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 6px;
+  }
+  
+  .date-timeline {
+    font-size: 1.500em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  
+  .text-timeline {
+    font-size: 1.250em;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 30px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    
+    #citation {
+      width: 100%;
+      padding: 20px;
+    }
+    
+    #citation::before {
+      font-size: 3em;
+      top: 13px;
+      left: 70px;
+    }
+    
+    .timeline::after {
+      left: 31px;
+      height: 94%;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+      left: 15px;
+    }
+    .right {
+      left: 0%;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+      .timeline::after {
+      height: 94%;
+    }
+  }
+  
+  @media screen and (max-width: 1180px) {
+    #citation {
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+    <h1>Steve Jobs</h1>
+    <br>
+    <img style="width: 100%; height: 700px;" src="kgkgkg.png" alt="Steve Jobs">
+    <div id="tribute-info">
+        <h2>Here's a timeline of Steve Jobs' life</h2>
+        <div class="timeline">
+                  <div class="container left">
+                    <div class="content">
+                      <h3 class="date-timeline">24 feb, 1955</h3>
+                      <p class="text-timeline">Born in San Francisco as Abdul Latif Jandali to Abdulfattah Jandali and Joanne Carole Schieble, and was adopted by Paul and Clara Jobs</p>
+                    </div>
+                  </div>
+                  <div class="container right">
+                    <div class="content">
+                      <h3 class="date-timeline">1961</h3>
+                      <p class="text-timeline">The family move to Mountain View</p>
+                    </div>
+                  </div>
+                  <div class="container left">
+                    <div class="content">
+                      <h3 class="date-timeline">1969</h3>
+                      <p class="text-timeline">Steve Jobs meet Steve Wozniak through a mutual friend</p>
+                    </div>
+                  </div>
+                  <div class="container right">
+                    <div class="content">
+                      <h3 class="date-timeline">1972</h3>
+                      <p class="text-timeline">Steve and Woz build and send an illegally blue boxes that allow to make phone calls for free</p>
+                    </div>
+                  </div>
+                  <div class="container left">
+                    <div class="content">
+                      <h3 class="date-timeline">1976</h3>
+                      <p class="text-timeline">Jobs, Wozniak and Ronald Wayne found Apple Computer in the garage of Jobs’s Los Altos home and present the Apple I</p>
+                    </div>
+                  </div>
+                  <div class="container right">
+                    <div class="content">
+                      <h3 class="date-timeline">1977</h3>
+                      <p class="text-timeline">Jobs and Wozniak introduced the Apple II : it was one of the first highly successful mass-produced microcomputer products in the world</p>
+                    </div>
+                  </div>
+                  <div class="container left">
+                    <div class="content">
+                      <h3 class="date-timeline">1985</h3>
+                      <p class="text-timeline">Following his resignation from Apple, Jobs found NeXT Inc</p>
+                    </div>
+                  </div>
+                  <div class="container right">
+                    <div class="content">
+                      <h3 class="date-timeline">1997</h3>
+                      <p class="text-timeline">Apple buy NeXT for $427 million, bringing Jobs back to the company he had cofounded</p>
+                    </div>
+                  </div>
+                  <div class="container left">
+                    <div class="content">
+                      <h3 class="date-timeline">24 aug, 2011</h3>
+                      <p class="text-timeline">Jobs announce his resignation as Apple’s CEO due to his cancer. He named Tim Cook as his successor.</p>
+                    </div>
+                  </div>
+                  <div class="container right">
+                    <div class="content">
+                      <h3 class="date-timeline">5 oct, 2011</h3>
+                      <p class="text-timeline">Jobs died at his Palo Alto home</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <footer>
+        <p style="text-align: center; background-color: #272B30EE; color: #fff; padding: 20px 0;">Designed by Danish &copy; 2024</p>
+    </footer>
+</body>
+</html>

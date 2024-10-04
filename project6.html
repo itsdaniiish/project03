@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1607500098489-1991d1fbab7a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+            color: #fff;
+        }
+
+        .current-weather, .forecast {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        .current-weather img {
+            max-width: 450px;
+            height: 220px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        
+        .forecast ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .forecast li {
+            margin-bottom: 10px;
+        }
+
+        .forecast img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+    <main>
+        <div class="current-weather">
+            <img src="https://www.sumnercollege.edu/wp-content/uploads/2021/06/Hot-Weather.jpeg" alt="Weather Image">
+            <h2>Current Weather</h2>
+            <p><strong>Temperature:</strong> 38°C</p>
+            <p><strong>Condition:</strong> Hot Weather</p>
+            <p><strong>Wind Speed:</strong> 5 km/h</p>
+        </div>
+        <div class="forecast">
+            <h2>5-Day Forecast</h2>
+            <ul>
+                <li><strong>Day 1:</strong> <img src="https://images.unsplash.com/photo-1534629938736-b1b076531d3b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Day 1"> Sunny, 28°C</li>
+                <li><strong>Day 2:</strong> <img src="https://media.istockphoto.com/id/1584354620/photo/hot-summer-day-celsius-and-fahrenheit-scale-thermometer-in-the-sand-ambient-temperature-plus.jpg?s=612x612&w=0&k=20&c=XL4Y9WTExw0gDtaM_dPFVuaTUV386A5Z_yleRypJ6pw=" alt="Day 2"> Hot Summer, 38°C</li>
+                <li><strong>Day 3:</strong> <img src="https://static.india.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-30-at-4.46.55-PM.jpeg?impolicy=Medium_Widthonly&w=400" alt="Day 3"> Rainy, 20°C</li>
+                <li><strong>Day 4:</strong> <img src="https://static.tnn.in/thumb/msid-107797051,thumbsize-13904,width-1280,height-720,resizemode-75/107797051.jpg" alt="Day 4"> Cloudy, 22°C</li>
+                <li><strong>Day 5:</strong> <img src="https://images.unsplash.com/photo-1521579901924-af922689e163?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Day 5"> Sunny, 30°C</li>
+            </ul>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 Weather Forecast. All rights reserved.</p>
+    </footer>
+</body>
+</html>

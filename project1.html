@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photography project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            background: #eee;
+            height: auto;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin: 0;
+            color: #333;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            margin: 0;
+            color: #888;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        main {
+            max-width: 90%;
+            margin: auto;
+            box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1)
+        }
+
+        #landing {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #landing-text {
+            flex: 1;
+        }
+
+        #landing-image {
+            flex: 1;
+            background: url(https://rb.gy/dth5aa) center/cover no-repeat;
+            max-width: 50%;
+            height: 480px;
+            margin: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin: auto;
+            color: #333;
+        }
+
+        footer h3 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        footer p a {
+            text-decoration: none;
+            color: red;
+        }
+
+        @media (min-width: 400px) {
+            #images {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 16px;
+                padding: 16px;
+                justify-content: center; 
+            }
+
+            img {
+                margin-bottom: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div id="landing">
+        <div id="landing-text">
+            <h1>Danish Photography</h1>
+            <h2>Capturing Moments, Creating Memories</h2>
+            <br>
+            <br>
+            <a href="#images" class="btn" id="view-work">View Work</a>
+        </div>
+        <div id="landing-image"></div>
+    </div>
+    <div id="images">
+        <img src="https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="01">
+        <img src="https://images.unsplash.com/photo-1583878545126-2f1ca0142714?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="02">
+        <img src="https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="03">
+        <img src="https://images.unsplash.com/photo-1610173827002-62c0f1f05d04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="04">
+        <img src="https://images.unsplash.com/photo-1601482441062-b9f13131f33a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="05">
+        <img src="https://plus.unsplash.com/premium_photo-1661862397518-8e50332b6e97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="06">
+        <img src="https://images.unsplash.com/photo-1482575832494-771f74bf6857?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="07">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="08">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="09">
+        <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="10">
+        <img src="https://plus.unsplash.com/premium_photo-1673515243602-a0d2212af213?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="11">
+        <img src="https://images.unsplash.com/photo-1482685945432-29a7abf2f466?q=80&w=1789&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="12">
+        <img src="https://images.unsplash.com/photo-1501908734255-16579c18c25f?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="13">
+        <img src="https://images.unsplash.com/photo-1493713838217-28e23b41b798?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="14">
+        <img src="https://images.unsplash.com/photo-1520637102912-2df6bb2aec6d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="15">
+    </div>
+</main>
+
+<footer>
+    <h3>Get In Touch</h3>
+    <p>Email or call us to set up a consult</p>
+    <p>Email: <strong>speak2danishofficially@gmai.com</strong></p>
+    <p>Phone: <a href="+917795434176"><strong>(+91)7795434176</strong></a></p>
+</footer>
+
+</body>
+
+</html>

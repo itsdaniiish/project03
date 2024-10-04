@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .grow-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .grow-button:hover {
+            animation: grow-button 0.3s ease-in-out;
+        }
+
+        @keyframes grow-button {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <button class="grow-button btn btn-primary btn-lg">Click Me</button>
+</body>
+</html>
